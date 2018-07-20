@@ -1,2 +1,0 @@
-# demo-project-base
-demo

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.security.dao.GroupInfoDao">
+	<select id="selectGroupInfo" parameterType="GroupInfoVo" resultType="GroupInfoVo">
+		SELECT
+			GROUP_ID groupId,
+			GROUP_NM groupNm,
+			GROUP_DESC groupDesc,
+			REG_DT regDt,
+			REG_IP regIp,
+			REG_MEMBER_IDX regMemberidx
+		FROM GROUP_INFO
+	</select>
+</mapper>

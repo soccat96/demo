@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.security.dao.WebProgramInfoDao">
+	<select id="selectWebProgramInfo" parameterType="WebProgramInfoVo" resultType="WebProgramInfoVo">
+		SELECT
+			WEB_PRD_ID webPrdId,
+			WEB_PRD_NM webPrdNm,
+			REG_DT regDt,
+			REG_IP regIp,
+			REG_MEMBER_IDX regMemberIdx,
+			VIEW_ORDER viewOrder,
+			TOP_MENU_VIEW_YN topMenuViewYn,
+			URL_PATTERN urlPattern
+		FROM WEB_PROGRAM_INFO
+	</select>
+
+	<select id="getListWebProgramGroup" resultType="WebProgramGroupVo">
+		SELECT
+			gp.WEB_PRD_ID webPrdId,
+			gp.GROUP_ID groupId,
+			gp.REG_DT regDt,
+			gp.REG_IP regIp,
+			gp.REG_MEMBER_IDX regMemberIdx,
+			wpi.URL_PATTERN urlPattern,
+			GROUP_CONCAT(gi.GROUP_NM) webProgramGroupListString
+		FROM GROUP_PROGRAM gp
+		LEFT JOIN GROUP_INFO gi
+			ON gp.GROUP_ID = gi.GROUP_ID
+		LEFT JOIN WEB_PROGRAM_INFO wpi
+			ON gp.WEB_PRD_ID = wpi.WEB_PRD_ID
+		GROUP BY gp.WEB_PRD_ID
+	</select>
+
+	<select id="webGroupTest" parameterType="WebProgramInfoVo" resultType="WebProgramGroupVo">
+		SELECT
+			GROUP_NM groupNm
+		FROM WEB_PROGRAM_INFO wpi
+		LEFT JOIN GROUP_PROGRAM GP
+			ON wpi.WEB_PRD_ID = GP.WEB_PRD_ID
+		LEFT JOIN GROUP_INFO GI
+			ON GP.GROUP_ID = GI.GROUP_ID
+		WHERE #{urlPattern} LIKE CONCAT(wpi.URL_PATTERN, '%')
+	</select>
+</mapper>

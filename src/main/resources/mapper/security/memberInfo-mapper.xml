@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.security.dao.MemberInfoDao">
+	<insert id="insertMemberInfo" parameterType="MemberInfoVo">
+		INSERT INTO MEMBER_INFO (
+			MEMBER_IDX,
+			ID,
+			PASSWD,
+			NAME,
+			EMAIL,
+			CEL_PHONE,
+			ENABLED,
+			REG_DT,
+			REG_IP,
+			REG_MEMBER_IDX,
+			SECEDE_DT,
+			SECEDE_IP,
+			SECEDE_MEMBER_IDX,
+			LOGIN_CNT,
+			LAST_ACCESS_TIME
+		) VALUE (
+			#{memberIdx},
+			#{id},
+			#{passwd},
+			#{name},
+			#{email},
+			#{celPhone},
+			#{enabled},
+			#{regDt},
+			#{regIp},
+			#{regMemberIdx},
+			#{secedeDt},
+			#{secedeIp},
+			#{secedeMemberIdx},
+			#{loginCnt},
+			#{lastAccessTime}
+		)
+	</insert>
+
+	<select id="selectOneMemberInfo" parameterType="MemberInfoVo" resultType="MemberInfoVo">
+		SELECT
+			mi.MEMBER_IDX memberIdx,
+			ID id,
+			PASSWD passwd,
+			NAME name,
+			EMAIL email,
+			CEL_PHONE celPhone,
+			ENABLED enabled,
+			mi.REG_DT regDt,
+			mi.REG_IP regIp,
+			mi.REG_MEMBER_IDX regMemberIdx,
+			SECEDE_DT secedeDt,
+			SECEDE_IP secedeIp,
+			SECEDE_MEMBER_IDX secedeMemberIdx,
+			LOGIN_CNT loginCnt,
+			LAST_ACCESS_TIME lastAccessTime,
+			GROUP_CONCAT(gi.GROUP_NM) memberGroupListString
+		FROM MEMBER_INFO mi
+		LEFT JOIN MEMBER_GROUP mg
+			ON mi.MEMBER_IDX = mg.MEMBER_IDX
+		LEFT JOIN GROUP_INFO gi
+			ON mg.GROUP_ID = gi.GROUP_ID
+		WHERE 1=1
+		<if test="memberIdx != null and memberIdx != ''">
+			AND mi.MEMBER_IDX = #{memberIdx}
+		</if>
+		<if test="id != null and id != ''">
+			AND mi.ID = #{id}
+		</if>
+		<if test="email != null and email != ''">
+			AND mi.EMAIL = #{email}
+		</if>
+	</select>
+
+	<select id="selectMemberInfo" parameterType="MemberInfoVo" resultType="MemberInfoVo">
+		SELECT
+			MEMBER_IDX memberIdx,
+			ID id,
+			PASSWD passwd,
+			NAME name,
+			EMAIL email,
+			CEL_PHONE celPhone,
+			ENABLED enabled,
+			REG_DT regDt,
+			REG_IP regIp,
+			REG_MEMBER_IDX regMemberIdx,
+			SECEDE_DT secedeDt,
+			SECEDE_IP secedeIp,
+			SECEDE_MEMBER_IDX secedeMemberIdx,
+			LOGIN_CNT loginCnt,
+			LAST_ACCESS_TIME lastAccessTime
+		FROM MEMBER_INFO
+		WHERE 1=1
+		<if test="memberIdx != null and memberIdx != ''">
+			AND MEMBER_IDX = #{memberIdx}
+		</if>
+		<if test="id != null and id != ''">
+			AND ID = #{id}
+		</if>
+		<if test="email != null and email != ''">
+			AND email = #{email}
+		</if>
+	</select>
+</mapper>

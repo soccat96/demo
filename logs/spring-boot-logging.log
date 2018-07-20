@@ -1,0 +1,168 @@
+2018-07-16 10:57:20.353  INFO 22676 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-EAH71R1 with PID 22676 (D:\workspace\intellij\demo\target\classes started by soc in D:\workspace\intellij\demo)
+2018-07-16 10:57:20.355  INFO 22676 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2018-07-16 10:57:20.390  INFO 22676 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78e117e3: startup date [Mon Jul 16 10:57:20 KST 2018]; root of context hierarchy
+2018-07-16 10:57:20.890  WARN 22676 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2018-07-16 10:57:21.374  INFO 22676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 10:57:21.390  INFO 22676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-16 10:57:21.391  INFO 22676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-16 10:57:21.394  INFO 22676 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\soc\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\soc\AppData\Local\atom\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.]
+2018-07-16 10:57:21.483  INFO 22676 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-16 10:57:21.484  INFO 22676 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1094 ms
+2018-07-16 10:57:21.593  INFO 22676 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-16 10:57:21.597  INFO 22676 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 10:57:21.597  INFO 22676 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 10:57:21.597  INFO 22676 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 10:57:21.597  INFO 22676 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 10:57:21.718  INFO 22676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-07-16 10:57:21.972  INFO 22676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-07-16 10:57:22.376  INFO 22676 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 10:57:22.538  INFO 22676 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78e117e3: startup date [Mon Jul 16 10:57:20 KST 2018]; root of context hierarchy
+2018-07-16 10:57:22.582  INFO 22676 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/get],methods=[GET]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.get(org.springframework.ui.ModelMap)
+2018-07-16 10:57:22.583  INFO 22676 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/logger],methods=[GET]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.logger()
+2018-07-16 10:57:22.583  INFO 22676 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/hello],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.HelloWorldController.helloWorld()
+2018-07-16 10:57:22.585  INFO 22676 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 10:57:22.586  INFO 22676 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 10:57:22.607  INFO 22676 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 10:57:22.607  INFO 22676 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 10:57:22.978  INFO 22676 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 10:57:22.980  INFO 22676 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-16 10:57:22.986  INFO 22676 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-16 10:57:23.030  INFO 22676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-16 10:57:23.034  INFO 22676 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.996 seconds (JVM running for 3.75)
+2018-07-16 10:58:08.205  INFO 30596 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-EAH71R1 with PID 30596 (D:\workspace\intellij\demo\target\classes started by soc in D:\workspace\intellij\demo)
+2018-07-16 10:58:08.208  INFO 30596 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2018-07-16 10:58:08.247  INFO 30596 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1184ab05: startup date [Mon Jul 16 10:58:08 KST 2018]; root of context hierarchy
+2018-07-16 10:58:08.755  WARN 30596 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2018-07-16 10:58:09.256  INFO 30596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 10:58:09.272  INFO 30596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-16 10:58:09.273  INFO 30596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-16 10:58:09.276  INFO 30596 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\soc\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\soc\AppData\Local\atom\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.]
+2018-07-16 10:58:09.370  INFO 30596 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-16 10:58:09.370  INFO 30596 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1124 ms
+2018-07-16 10:58:09.474  INFO 30596 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-16 10:58:09.477  INFO 30596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 10:58:09.477  INFO 30596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 10:58:09.477  INFO 30596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 10:58:09.477  INFO 30596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 10:58:09.596  INFO 30596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-07-16 10:58:10.809  INFO 30596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-07-16 10:58:11.198  INFO 30596 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 10:58:11.354  INFO 30596 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1184ab05: startup date [Mon Jul 16 10:58:08 KST 2018]; root of context hierarchy
+2018-07-16 10:58:11.396  INFO 30596 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/get],methods=[GET]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.get(org.springframework.ui.ModelMap)
+2018-07-16 10:58:11.397  INFO 30596 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/logger],methods=[GET]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.logger()
+2018-07-16 10:58:11.397  INFO 30596 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/hello],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.HelloWorldController.helloWorld()
+2018-07-16 10:58:11.399  INFO 30596 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 10:58:11.400  INFO 30596 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 10:58:11.420  INFO 30596 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 10:58:11.420  INFO 30596 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 10:58:11.769  INFO 30596 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 10:58:11.770  INFO 30596 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-16 10:58:11.774  INFO 30596 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-16 10:58:11.811  INFO 30596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-16 10:58:11.814  INFO 30596 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 3.903 seconds (JVM running for 4.631)
+2018-07-16 10:58:15.091  INFO 30596 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-16 10:58:15.091  INFO 30596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-16 10:58:15.110  INFO 30596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-07-16 10:58:15.131 DEBUG 30596 --- [http-nio-8080-exec-1] c.e.d.controller.HelloWorldController    : logback - debug
+2018-07-16 10:58:15.131  INFO 30596 --- [http-nio-8080-exec-1] c.e.d.controller.HelloWorldController    : logback - info
+2018-07-16 10:58:15.131  WARN 30596 --- [http-nio-8080-exec-1] c.e.d.controller.HelloWorldController    : logback - warn
+2018-07-16 10:58:15.131 ERROR 30596 --- [http-nio-8080-exec-1] c.e.d.controller.HelloWorldController    : logback - error
+2018-07-16 11:06:25.872  INFO 22176 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-EAH71R1 with PID 22176 (D:\workspace\intellij\demo\target\classes started by soc in D:\workspace\intellij\demo)
+2018-07-16 11:06:25.877  INFO 22176 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2018-07-16 11:06:25.926  INFO 22176 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@694abbdc: startup date [Mon Jul 16 11:06:25 KST 2018]; root of context hierarchy
+2018-07-16 11:06:26.500  WARN 22176 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2018-07-16 11:06:27.001  INFO 22176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-07-16 11:06:27.018  INFO 22176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-16 11:06:27.018  INFO 22176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-16 11:06:27.022  INFO 22176 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\soc\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\soc\AppData\Local\atom\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.]
+2018-07-16 11:06:27.114  INFO 22176 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-16 11:06:27.114  INFO 22176 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1188 ms
+2018-07-16 11:06:27.220  INFO 22176 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-16 11:06:27.223  INFO 22176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 11:06:27.223  INFO 22176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 11:06:27.223  INFO 22176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 11:06:27.224  INFO 22176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 11:06:27.337  INFO 22176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-07-16 11:06:28.637  INFO 22176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-07-16 11:06:29.043  INFO 22176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 11:06:29.202  INFO 22176 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@694abbdc: startup date [Mon Jul 16 11:06:25 KST 2018]; root of context hierarchy
+2018-07-16 11:06:29.247  INFO 22176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/get],methods=[GET]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.get(org.springframework.ui.ModelMap)
+2018-07-16 11:06:29.247  INFO 22176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/logger],methods=[GET]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.logger()
+2018-07-16 11:06:29.248  INFO 22176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/hello],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.HelloWorldController.helloWorld()
+2018-07-16 11:06:29.250  INFO 22176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 11:06:29.250  INFO 22176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 11:06:29.273  INFO 22176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 11:06:29.273  INFO 22176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 11:06:29.652  INFO 22176 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-16 11:06:29.653  INFO 22176 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-16 11:06:29.657  INFO 22176 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-16 11:06:29.697  INFO 22176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-16 11:06:29.700  INFO 22176 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 4.188 seconds (JVM running for 4.938)
+2018-07-16 11:06:32.653  INFO 22176 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-16 11:06:32.654  INFO 22176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-16 11:06:32.671  INFO 22176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-07-16 11:06:32.686 DEBUG 22176 --- [http-nio-8080-exec-1] c.e.d.controller.HelloWorldController    : logback - debug
+2018-07-16 11:06:32.687  INFO 22176 --- [http-nio-8080-exec-1] c.e.d.controller.HelloWorldController    : logback - info
+2018-07-16 11:06:32.687  WARN 22176 --- [http-nio-8080-exec-1] c.e.d.controller.HelloWorldController    : logback - warn
+2018-07-16 11:06:32.687 ERROR 22176 --- [http-nio-8080-exec-1] c.e.d.controller.HelloWorldController    : logback - error
+2018-07-16 11:07:35.034 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication on DESKTOP-EAH71R1 with PID 26396 (D:\workspace\intellij\demo\target\classes started by soc in D:\workspace\intellij\demo)
+2018-07-16 11:07:35.037 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2018-07-16 11:07:35.075 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71809907: startup date [Mon Jul 16 11:07:35 KST 2018]; root of context hierarchy
+2018-07-16 11:07:35.569 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2018-07-16 11:07:36.054 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-07-16 11:07:36.063 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-16 11:07:36.070 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-07-16 11:07:36.071 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-16 11:07:36.074 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\soc\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\soc\AppData\Local\atom\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.]
+2018-07-16 11:07:36.165 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-16 11:07:36.166 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1091 ms
+2018-07-16 11:07:36.274 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-07-16 11:07:36.277 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-16 11:07:36.278 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-16 11:07:36.278 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-16 11:07:36.278 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-16 11:07:36.393 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-07-16 11:07:36.608 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-07-16 11:07:37.005 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 11:07:37.163 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71809907: startup date [Mon Jul 16 11:07:35 KST 2018]; root of context hierarchy
+2018-07-16 11:07:37.211 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test/get],methods=[GET]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.get(org.springframework.ui.ModelMap)
+2018-07-16 11:07:37.212 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test/logger],methods=[GET]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.logger()
+2018-07-16 11:07:37.212 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test/hello],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.HelloWorldController.helloWorld()
+2018-07-16 11:07:37.215 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-16 11:07:37.216 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-16 11:07:37.235 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 11:07:37.236 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-16 11:07:37.580 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-16 11:07:37.581 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-16 11:07:37.585 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-16 11:07:37.594 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-07-16 11:07:37.606 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-16 11:07:37.623 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-16 11:07:37.626 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.965 seconds (JVM running for 3.759)
+2018-07-16 11:07:44.367 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-16 11:07:44.368 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-16 11:07:44.386 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-07-16 11:07:44.403 [http-nio-8080-exec-1] DEBUG c.e.d.c.HelloWorldController - logback - debug
+2018-07-16 11:07:44.403 [http-nio-8080-exec-1] INFO  c.e.d.c.HelloWorldController - logback - info
+2018-07-16 11:07:44.403 [http-nio-8080-exec-1] WARN  c.e.d.c.HelloWorldController - logback - warn
+2018-07-16 11:07:44.403 [http-nio-8080-exec-1] ERROR c.e.d.c.HelloWorldController - logback - error
+2018-07-16 11:07:57.261 [http-nio-8080-exec-3] INFO  org.jooq.Constants - 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.11.0
+                                      
